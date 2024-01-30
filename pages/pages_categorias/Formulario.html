@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FightClub</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" href="../../img/yin-yang.jpg" type="image/x-icon" />
+    <script src="../../JS/script.js"></script>
+    <script src="../../JS/bootstrap.min.js"></script>
+    <script src="../../JS/script_php.js"></script>
+  </head>
+  <body class="body-formulario">
+    <div class="container_form">
+      <div class="fondo_form">
+        <div class="fondo_form_login">
+          <h3>¿Ya tienes cuenta?</h3>
+          <p>Inicia sesión para acceder a la página de nuevo</p>
+          <button id="btn_iniciar-sesion">Iniciar Sesión</button>
+        </div>
+        <div class="fondo_form_registro">
+          <h3>¿Aún no tienes cuenta?</h3>
+          <p>Regístrate para poder iniciar sesión</p>
+          <button id="btn_registro">Registrarse</button>
+        </div>
+      </div>
+
+      <div class="container_login_registro">
+        <form action="../../php/enviar_inicio.php" class="formulario_login">
+          <h2>Iniciar sesión</h2>
+          <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required />
+          <input type="password" id="password" name="password" placeholder="Contraseña" required />
+          <button class="inicio_form">Entrar</button>
+        </form>
+        <form action="../../php/enviar_registro.php" class="formulario_registro">
+          <h2>Registrarse</h2>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required />
+          <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required />
+          <input type="text" id="user" name="user" placeholder="Usuario" required />
+          <input type="password" id="password" name="password" placeholder="Contraseña" required />
+          <button class="registrarse_form">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="../../JS/script_form.js"></script>
+</html>

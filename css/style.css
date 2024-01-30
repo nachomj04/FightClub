@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+
+body {
+  background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(73, 73, 73));
+}
+
+nav {
+  background-color: rgb(190, 190, 190);
+}
+
+.navbar {
+  justify-content: space-around !important;
+}
+
+li {
+  padding: 0 3em 0 3em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-main {
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+
+.animated-section {
+  opacity: 0;
+  transform: translateY(15em);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn {
+  background-color: rgb(255, 135, 0) !important;
+  border-color: rgb(255, 135, 0) !important;
+  font-weight: bold;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+nav .btn {
+  color: white !important;
+  background-color: rgb(0, 120, 255) !important;
+  border: none;
+}
+
+nav .btn:hover {
+  background-color: rgb(0, 80, 255) !important;
+  border-color: none;
+}
+
+main .btn {
+  transform: translateX(-5em);
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+}
+.img-container:hover .btn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.main-index {
+  justify-content: center;
+  text-align: center;
+  gap: 10em;
+}
+
+.main-info {
+  text-align: center;
+  padding: 5em 5em 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.carrito {
+  width: 9em;
+  border-radius: 50%;
+}
+
+.carrito:hover {
+  width: 10em;
+  transition: 400ms;
+}
+
+.main-carrito {
+  text-align: center;
+  color: white;
+}
+
+.main-carrito h2 {
+  padding: 1em;
+  font-size: 5em;
+  text-decoration: underline;
+  font-family: "Julee";
+}
+
+.main-carrito button {
+  width: 11em;
+  height: 3em;
+  border-radius: 1em;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, rgb(255, 130, 0), rgb(255, 100, 0));
+  border: none;
+}
+.main-carrito button:hover {
+  font-size: large;
+  transition: 200ms;
+}
+
+.main-carrito .comprar {
+  margin-top: 2em;
+}
+
+.items_carrito button {
+  margin-left: 2em;
+  width: auto;
+  font-size: large;
+}
+
+.items_carrito div {
+  padding: 1em 0 2em 0;
+  font-size: 1.5em;
+}
+
+footer {
+  display: inline-block;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 10em;
+  background: linear-gradient(to right, rgb(255, 130, 0), rgb(255, 100, 0));
+  color: black;
+  font-weight: bold;
+  padding-top: 3em;
+}
+
+.inicio {
+  background-image: url(../img/banner_artes_marciales.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.link-1 {
+  color: white;
+}
+
+.link-1:visited {
+  color: white;
+}
+
+h1 {
+  font-family: "Julee", cursive;
+  font-size: 4em;
+}
+
+.comprarYa {
+  font-size: large;
+}
+
+.mapa {
+  padding-bottom: 2em;
+  width: auto;
+  height: auto;
+  border: 0;
+}
+
+.scroll-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: 0.7em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+/*Imagenes*/
+
+.img-main {
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  margin-top: 7em;
+  transition: transform 0.3s;
+}
+
+.img-inicio-fin {
+  border-radius: 0%;
+  width: 4em;
+  height: 4em;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container:hover .img-main {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.img-container:hover .img-overlay {
+  opacity: 1;
+}
+
+.img-flecha {
+  width: 1.5em;
+}
+
+/*subpages*/
+
+.producto {
+  border: none;
+  padding: 3em 0 3em 0;
+  margin: 10em;
+}
+
+.main-subpage {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding-top: 5em;
+}
+
+.producto h3 {
+  font-size: 3.5em;
+  text-decoration: overline;
+  font-family: "Julee";
+}
+
+.producto p {
+  font-size: x-large;
+  padding: 1.5em;
+}
+
+.producto button {
+  width: 11em;
+  height: 3em;
+  border-radius: 1em;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, rgb(255, 130, 0), rgb(255, 100, 0));
+  border: none;
+}
+
+.producto button:hover {
+  font-size: large;
+  transition: 300ms;
+}
+
+.main-subpage .scroll-top-btn {
+  width: auto;
+}
+
+.img-producto {
+  border-radius: 5em;
+  width: 20em;
+  padding: 1em 0 1em 0;
+}
+
+/*Formulario*/
+
+.body-formulario {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(73, 73, 73));
+}
+
+.container_form {
+  position: relative;
+  width: 100%;
+  max-width: 56em;
+  background: rgb(255, 255, 255);
+}
+
+.fondo_form {
+  width: 100%;
+  padding: 3em 1em 3em 1em;
+  display: flex;
+  justify-content: space-around;
+  backdrop-filter: blur(1em);
+  background: linear-gradient(to right, rgb(255, 165, 0), rgb(255, 80, 0));
+}
+
+.fondo_form div {
+  margin: 1em;
+  color: white;
+}
+
+.fondo_form div p,
+.fondo_form div button {
+  margin-top: 2em;
+}
+
+.fondo_form div h3 {
+  font-family: "Julee", cursive;
+  font-size: xx-large;
+}
+
+.fondo_form button {
+  padding: 0.5em 2em;
+  border: 0.1em solid white;
+  border-radius: 0.5em;
+  background-color: rgb(255, 255, 255, 1);
+}
+
+.fondo_form button:hover {
+  background-color: rgb(255, 255, 255, 0.8);
+  border-width: none;
+  transition: 300ms;
+}
+
+.container_login_registro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 25em;
+  position: relative;
+  top: -10em;
+  left: 1em;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.container_login_registro form {
+  width: 100%;
+  padding: 3em;
+  background-color: white;
+  position: absolute;
+  border-radius: 1em;
+}
+
+.container_login_registro form h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: rgb(0, 120, 255);
+}
+
+.container_login_registro form input {
+  width: 100%;
+  margin-top: 1em;
+  padding: 0.5em;
+  border: none;
+  background-color: rgb(224, 224, 224);
+  outline: none;
+  border-radius: 0.5em;
+}
+
+.container_login_registro form button {
+  padding: 1em 2em;
+  margin-top: 2em;
+  border: none;
+  background-color: rgb(34, 137, 255);
+  border-radius: 0.5em;
+  color: white;
+}
+
+.container_login_registro form button:hover {
+  background-color: rgba(34, 137, 255, 0.8);
+  transition: 500ms;
+}
+
+.container_login_registro a {
+  color: white;
+}
+
+.formulario_login {
+  opacity: 1;
+  display: block;
+}
+
+.formulario_registro {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin-top: 50px;
+  }
+
+  .fondo_form {
+    max-width: 20em;
+    height: 20em;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .fondo_form div {
+    margin: 0;
+    position: absolute;
+  }
+
+  .container_form {
+    background-color: transparent;
+  }
+
+  .container_login_registro {
+    top: -1em;
+    left: -0.5em;
+    margin: auto;
+  }
+
+  .container_login_registro form {
+    position: relative;
+  }
+}

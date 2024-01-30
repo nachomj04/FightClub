@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FightClub</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" href="../../img/yin-yang.jpg" type="image/x-icon" />
+    <script src="../../JS/script.js"></script>
+    <script src="../../JS/script_flecha.js"></script>
+    <script src="../../JS/bootstrap.min.js"></script>
+    <script src="../../JS/script_carrito.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg mx-auto navbar-collapse d-flex justify-content-center"
+        id="navbarNav"
+      >
+        <a class="navbar-brand" href="../../index.html">
+          <img class="img-inicio-fin" src="../../img/logo.jpg" alt="Logo tienda" />
+        </a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link link-1" href="../../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-1" href="../../pages/quienes-somos.html"
+              >Quiénes somos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-1" href="../pages_categorias/karate.html#contacto"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-1" href="../../pages/carrito.html">Carrito</a>
+          </li>
+        </ul>
+        <a href="../../pages/carrito.html">
+          <img class="carrito" src="../../img/carrito.png" alt="carrito" />
+        </a>
+        
+        <a href="pages/pages_categorias/Formulario.html" class="btn">Iniciar sesión/Registrarse</a>
+      </nav>
+
+      <div class="inicio">
+        <h1>TAEKWONDO</h1>
+      </div>
+    </header>
+
+    <main class="main-subpage">
+      <div>
+      <section>
+        <div class="producto" id="dobok_taekwondo">
+            <h3>Cuello Blanco WT Dobok</h3>
+            <img class="img-producto" src="../../img/dobok_taekwondo.jpg" alt="dobok">
+            <p>Precio: 55,00€</p>
+            <button onclick="agregarAlCarrito('Cuello Blanco WT Dobok', 55.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="espinilleras_taekwondo">
+            <h3>Espinillera Tobillera</h3>
+            <img class="img-producto" src="../../img/espinilleras_taekwondo.jpg" alt="espinilleras_taekwondo">
+            <p>Precio: 59,00€</p>
+            <button onclick="agregarAlCarrito('Espinilleras de Taekwondo', 59.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="antebrazo">
+            <h3>Antebrazo Oficial (Reconocido) W.T.F.</h3>
+            <img class="img-producto" src="../../img/antebrazo.jpg" alt="antebrazo">
+            <p>Precio: 29,99€</p>
+            <button onclick="agregarAlCarrito('Antebrazo Oficial <Reconocido> W.T.F.', 29.99)">Agregar al Carrito</button>
+        </div>
+      </section>
+      <section>
+        <div class="producto" id="peto_taekwondo">
+            <h3>Peto Taekwondo Reversible - Azul / Rojo</h3>
+            <img class="img-producto" src="../../img/peto_taekwondo.jpg" alt="peto_taekwondo">
+            <p>Precio: 37,00€</p>
+            <button onclick="agregarAlCarrito('Peto Taekwondo Reversible - Azul / Rojo', 37.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="bucal">
+            <h3>Protector bucal</h3>
+            <img class="img-producto" src="../../img/bucal.jpg" alt="bucal">
+            <p>Precio: 4,50€</p>
+            <button onclick="agregarAlCarrito('Protector bucal', 4.50)">Agregar al Carrito</button>
+        </div>
+      <section>
+        <div class="producto" id="coquilla">
+            <h3>Coquilla Taekwondo masculina W.T</h3>
+            <img class="img-producto" src="../../img/coquilla.jpg" alt="coquilla">
+            <p>Precio: 17,00€</p>
+            <button onclick="agregarAlCarrito('Coquilla Taekwondo masculina W.T', 17.00)">Agregar al Carrito</button>
+        </div>
+      </section>
+      
+      <button id="scrollToTopBtn" class="scroll-top-btn">
+        <img class="img-flecha" src="../../img/flecha.png" alt="flecha hacia arriba" />
+      </button>
+      </div>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="img-inicio-fin" src="../../img/logo.jpg" alt="Logo tienda" />
+          <p>&copy;2024 FightClub</p>
+        </div>
+        <div class="col-md-3">
+          <p>REDES:</p>
+          <p>ig: @fight_club</p>
+          <p>fb: @FightClub_Shop</p>
+          <p>tw / X: @FightClub_Shop</p>
+        </div>
+        <div class="col-md-3" id="contacto">
+          <p>Dirección: C. Consuegra, 3, Chamartín, 28036 Madrid</p>
+          <p>tfno: +34 (408) 102-1436</p>
+          <p>Correo: fightclub@fclub.shop</p>
+        </div>
+        <div class="col-md-3">
+          <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4051.3045319206776!2d-3.676322218839867!3d40.47417634967097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228be806226af%3A0xfcf9a3ab0db928be!2sMSMK!5e0!3m2!1ses!2ses!4v1702312572858!5m2!1ses!2ses"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

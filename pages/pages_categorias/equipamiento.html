@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FightClub</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" href="../../img/yin-yang.jpg" type="image/x-icon" />
+    <script src="../../JS/script.js"></script>
+    <script src="../../JS/script_flecha.js"></script>
+    <script src="../../JS/bootstrap.min.js"></script>
+    <script src="../../JS/script_carrito.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg mx-auto navbar-collapse d-flex justify-content-center"
+        id="navbarNav"
+      >
+        <a class="navbar-brand" href="../../index.html">
+          <img
+            class="img-inicio-fin"
+            src="../../img/logo.jpg"
+            alt="Logo tienda"
+          />
+        </a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link link-1" href="../../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-1" href="../../pages/quienes-somos.html"
+              >Quiénes somos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link link-1"
+              href="../pages_categorias/karate.html#contacto"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-1" href="../../pages/carrito.html"
+              >Carrito</a
+            >
+          </li>
+        </ul>
+        <a href="../../pages/carrito.html">
+          <img class="carrito" src="../../img/carrito.png" alt="carrito" />
+        </a>
+
+        <a href="pages/pages_categorias/Formulario.html" class="btn"
+          >Iniciar sesión/Registrarse</a
+        >
+      </nav>
+
+      <div class="inicio">
+        <h1>EQUIPAMIENTO ADICIONAL</h1>
+      </div>
+    </header>
+
+    <main class="main-subpage">
+      <div>
+        <section>
+          <div class="producto" id="cuchillo">
+            <h3>Cuchillo Entrenamiento</h3>
+            <img
+              class="img-producto"
+              src="../../img/cuchillo.jpg"
+              alt="cuchillo"
+            />
+            <p>Precio: 7,95€</p>
+            <button onclick="agregarAlCarrito('Cuchillo Entrenamiento', 7.95)">
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="producto" id="karambit">
+            <h3>Cuchillo Entrenamiento TPR. Karambit</h3>
+            <img
+              class="img-producto"
+              src="../../img/karambit.jpg"
+              alt="karambit"
+            />
+            <p>Precio: 7,95€</p>
+            <button
+              onclick="agregarAlCarrito('Cuchillo Entrenamiento TPR. Karambit', 7.95)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="producto" id="pistola">
+            <h3>Pistola Entrenamiento Walther P99 con Cargador</h3>
+            <img
+              class="img-producto"
+              src="../../img/pistola.jpg"
+              alt="pistola"
+            />
+            <p>Precio: 36,95€</p>
+            <button
+              onclick="agregarAlCarrito('Pistola Entrenamiento Walther P99 con Cargador', 36.95)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </section>
+        <section>
+          <div class="producto" id="fusil">
+            <h3>Rifle Entrenamiento TPR</h3>
+            <img class="img-producto" src="../../img/fusil.jpg" alt="fusil" />
+            <p>Precio: 174,95€</p>
+            <button
+              onclick="agregarAlCarrito('Rifle Entrenamiento TPR', 174.95)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="producto" id="palo_gomaespuma">
+            <h3>Palo Gomaespuma</h3>
+            <img
+              class="img-producto"
+              src="../../img/palo_gomaespuma.jpg"
+              alt="palo_gomaespuma"
+            />
+            <p>Precio: 13,95€</p>
+            <button onclick="agregarAlCarrito('Palo Gomaespuma', 13.95)">
+              Agregar al Carrito
+            </button>
+          </div>
+        </section>
+
+        <button id="scrollToTopBtn" class="scroll-top-btn">
+          <img
+            class="img-flecha"
+            src="../../img/flecha.png"
+            alt="flecha hacia arriba"
+          />
+        </button>
+      </div>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            class="img-inicio-fin"
+            src="../../img/logo.jpg"
+            alt="Logo tienda"
+          />
+          <p>&copy;2024 FightClub</p>
+        </div>
+        <div class="col-md-3">
+          <p>REDES:</p>
+          <p>ig: @fight_club</p>
+          <p>fb: @FightClub_Shop</p>
+          <p>tw / X: @FightClub_Shop</p>
+        </div>
+        <div class="col-md-3" id="contacto">
+          <p>Dirección: C. Consuegra, 3, Chamartín, 28036 Madrid</p>
+          <p>tfno: +34 (408) 102-1436</p>
+          <p>Correo: fightclub@fclub.shop</p>
+        </div>
+        <div class="col-md-3">
+          <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4051.3045319206776!2d-3.676322218839867!3d40.47417634967097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228be806226af%3A0xfcf9a3ab0db928be!2sMSMK!5e0!3m2!1ses!2ses!4v1702312572858!5m2!1ses!2ses"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
